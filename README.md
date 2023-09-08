@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+//URL DEMONSTRATIVA: https://amazona-frontend-pearl.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Configuração do Front-End da Aplicação
 
-## Available Scripts
+Esta documentação descreve os passos necessários para configurar e executar o front-end de uma aplicação com base no arquivo `package.json` e no arquivo `.env` fornecidos.
 
-In the project directory, you can run:
+## Requisitos Prévios
 
-### `npm start`
+Antes de começar, certifique-se de que você possui os seguintes requisitos prévios instalados em seu sistema:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Node.js e npm:** Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em seu sistema. Você pode baixá-los em [nodejs.org](https://nodejs.org/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+Siga os passos abaixo para configurar e executar o front-end da aplicação:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clonar o Repositório:**
 
-### `npm run build`
+   ```bash
+   git clone <URL_DO_REPOSITÓRIO>
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navegar para a Pasta do Front-End:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd frontend
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Instalar Dependências:**
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Configurar Variáveis de Ambiente:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Crie um arquivo `.env` na raiz do diretório do front-end (se já não existir) e defina as variáveis de ambiente necessárias. No seu caso, o arquivo `.env` já foi fornecido com a seguinte configuração:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```plaintext
+   REACT_APP_API_URL=http://localhost:3001
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Executar a Aplicação:**
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   A aplicação será iniciada e estará disponível em [http://localhost:3000](http://localhost:3000).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Scripts Personalizados
 
-### Code Splitting
+O arquivo `package.json` inclui alguns scripts personalizados que podem ser úteis durante o desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start`: Inicia o servidor de desenvolvimento e abre a aplicação em seu navegador padrão.
+- `npm build`: Compila a aplicação para produção.
+- `npm test`: Executa testes unitários da aplicação.
+- `npm eject`: Ejeta a configuração do Create React App para personalizações avançadas.
 
-### Analyzing the Bundle Size
+## Conclusão
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Você configurou e executou com sucesso o front-end da aplicação. Certifique-se de que o back-end da aplicação também esteja em execução e configurado corretamente para que o front-end possa se comunicar com ele. Para quaisquer problemas ou dúvidas adicionais, consulte a documentação da aplicação ou entre em contato com a equipe de desenvolvimento.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Configuração do Back-End da Aplicação
 
-### Advanced Configuration
+Esta documentação descreve os passos necessários para configurar e executar o back-end de uma aplicação com base no arquivo `.env` e no arquivo `package.json` fornecidos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Requisitos Prévios
 
-### Deployment
+Antes de começar, certifique-se de que você possui os seguintes requisitos prévios instalados em seu sistema:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Node.js e npm:** Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em seu sistema. Você pode baixá-los em [nodejs.org](https://nodejs.org/).
 
-### `npm run build` fails to minify
+- **MongoDB:** Certifique-se de ter um servidor MongoDB em execução ou configure um serviço MongoDB na nuvem, conforme necessário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Configuração do Back-End
+
+Siga os passos abaixo para configurar e executar o back-end da aplicação:
+
+1. **Clonar o Repositório:**
+
+   ```bash
+   git clone <URL_DO_REPOSITÓRIO>
+   ```
+
+2. **Navegar para a Pasta do Back-End:**
+
+   ```bash
+   cd backend
+   ```
+
+3. **Instalar Dependências:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Configurar Variáveis de Ambiente:**
+
+   Crie um arquivo `.env` na raiz do diretório do back-end (se já não existir) e defina as variáveis de ambiente necessárias. No seu caso, o arquivo `.env` já foi fornecido com a seguinte configuração:
+
+   ```plaintext
+   PORT=3001
+   JWT_SECRET=secret
+   MONGODB_URI=mongodb+srv://omanramalho:Jc2DZZySP3fLNVnH@amazona.sfgftro.mongodb.net/?retryWrites=true&w=majority
+   PAYPAL_CLIENT_ID=ATaAhJuCdDmGEz1UmnGMVZ-ht0PsJq2zZdOs8AH3dNhx5NEE5ZGSBHoDx_z8cJUz4a-ULgJBNp9WWidM
+   ```
+
+5. **Executar o Back-End:**
+
+   - Para ambiente de desenvolvimento com reinicialização automática (usando nodemon):
+
+     ```bash
+     npm run dev
+     ```
+
+   - Para ambiente de produção:
+
+     ```bash
+     npm run start
+     ```
+
+   Certifique-se de que o servidor esteja em execução na porta especificada no arquivo `.env`.
+
+## Scripts Personalizados
+
+O arquivo `package.json` inclui alguns scripts personalizados que podem ser úteis durante o desenvolvimento:
+
+- `npm run dev`: Inicia o servidor do back-end em modo de desenvolvimento com reinicialização automática usando o nodemon.
+- `npm run start`: Inicia o servidor do back-end em modo de produção.
+- `npm test`: Executa testes unitários da aplicação.
+
+## Conclusão
+
+Você configurou e executou com sucesso o back-end da aplicação. Certifique-se de que o front-end da aplicação esteja configurado corretamente para se comunicar com o back-end. Para quaisquer problemas ou dúvidas adicionais, consulte a documentação da aplicação ou entre em contato com a equipe de desenvolvimento.
