@@ -131,7 +131,11 @@ O arquivo `package.json` inclui alguns scripts personalizados que podem ser úte
 - `npm run dev`: Inicia o servidor do back-end em modo de desenvolvimento com reinicialização automática usando o nodemon.
 - `npm run start`: Inicia o servidor do back-end em modo de produção.
 - `npm test`: Executa testes unitários da aplicação.
+- 
 
 ## Conclusão
 
 Você configurou e executou com sucesso o back-end da aplicação. Certifique-se de que o front-end da aplicação esteja configurado corretamente para se comunicar com o back-end. Para quaisquer problemas ou dúvidas adicionais, consulte a documentação da aplicação ou entre em contato com a equipe de desenvolvimento.
+
+![image](https://github.com/omanramalho42/shop-frontend/assets/64960771/7f0ea222-c2c1-4bd5-9e81-f5ffa3d3950d)
+
