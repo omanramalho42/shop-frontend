@@ -101,13 +101,6 @@ Siga os passos abaixo para configurar e executar o back-end da aplicação:
 
    Crie um arquivo `.env` na raiz do diretório do back-end (se já não existir) e defina as variáveis de ambiente necessárias. No seu caso, o arquivo `.env` já foi fornecido com a seguinte configuração:
 
-   ```plaintext
-   PORT=3001
-   JWT_SECRET=secret
-   MONGODB_URI=mongodb+srv://omanramalho:Jc2DZZySP3fLNVnH@amazona.sfgftro.mongodb.net/?retryWrites=true&w=majority
-   PAYPAL_CLIENT_ID=ATaAhJuCdDmGEz1UmnGMVZ-ht0PsJq2zZdOs8AH3dNhx5NEE5ZGSBHoDx_z8cJUz4a-ULgJBNp9WWidM
-   ```
-
 5. **Executar o Back-End:**
 
    - Para ambiente de desenvolvimento com reinicialização automática (usando nodemon):
